@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>教育科技學系 互動作品</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="game-container"></div>
+  <div class="space-icon" role="img" aria-label="漂浮的飛碟裝飾">
+    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="ufoDome" x1="50%" y1="0%" x2="50%" y2="100%">
+          <stop offset="0%" stop-color="#a5f3ff" />
+          <stop offset="100%" stop-color="#3e9dd6" />
+        </linearGradient>
+        <linearGradient id="ufoHull" x1="0%" y1="50%" x2="100%" y2="50%">
+          <stop offset="0%" stop-color="#c0c4ff" />
+          <stop offset="100%" stop-color="#5a64c5" />
+        </linearGradient>
+        <linearGradient id="ufoBeam" x1="50%" y1="0%" x2="50%" y2="100%">
+          <stop offset="0%" stop-color="rgba(173,216,255,0.6)" />
+          <stop offset="100%" stop-color="rgba(64,140,255,0)" />
+        </linearGradient>
+      </defs>
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 28c-4 10-2 22 10 22s14-12 10-22" fill="url(#ufoBeam)" stroke="none" />
+        <ellipse cx="32" cy="26" rx="14" ry="6" fill="url(#ufoHull)" stroke="#3d428c" stroke-width="2" />
+        <ellipse cx="32" cy="20" rx="9" ry="5" fill="url(#ufoDome)" stroke="#2f6d96" stroke-width="2" />
+        <path d="M18 28c2 3 8 5 14 5s12-2 14-5" stroke="#2f3c78" stroke-width="2" />
+        <circle cx="24" cy="28" r="2" fill="#ffe082" stroke="#ffb300" stroke-width="1.5" />
+        <circle cx="32" cy="30" r="2" fill="#ffe082" stroke="#ffb300" stroke-width="1.5" />
+        <circle cx="40" cy="28" r="2" fill="#ffe082" stroke="#ffb300" stroke-width="1.5" />
+        <path d="M26 44c0 6 2 10 6 10s6-4 6-10" stroke="#37508c" stroke-width="2.2" />
+        <path d="M22 24c-2-3-6-5-10-4 4 3 6 8 6 8" stroke="#4f6eb8" stroke-width="2" />
+        <path d="M42 24c2-3 6-5 10-4-4 3-6 8-6 8" stroke="#4f6eb8" stroke-width="2" />
+      </g>
+    </svg>
+  </div>
+
+  <!-- p5.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
